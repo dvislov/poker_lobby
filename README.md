@@ -1,1 +1,4 @@
-# poker_lobby
+poker_lobby
+===========
+
+Layouts for poker game. Lobby.
