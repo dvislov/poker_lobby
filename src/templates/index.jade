@@ -27,8 +27,13 @@ html
             | buy in
             span.lobby-list-header-item-help ?
           .lobby-list-header-item
+            span.lobby-list-header-item-help
             | hide full
-            span.lobby-list-header-item-help ?
+            .lobby-view-switcher
+              .lobby-view.lobby-view__type-table.lobby-view__state-active
+              .lobby-view.lobby-view__type-list
+              .lobby-view.lobby-view__type-settings
+
 
         - var n = 0
         while n < 4

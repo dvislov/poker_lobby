@@ -151,6 +151,7 @@
   font-size 12px
   font-weight bold
   text-transform uppercase
+  position relative
 
 .lobby-list-header-item-help
   display inline-block
@@ -168,6 +169,7 @@
   position relative
   top -2px
   padding-top 1px
+  margin-right 6px
 
 .lobby-item-content
   font-size 14px
@@ -202,6 +204,33 @@
   background-color #0076a3
   border-color #0076a3
   color #fff
+
+
+.lobby-view-switcher
+  display inline-block
+  cursor pointer
+  position absolute
+  right 10px
+  top 14px
+.lobby-view
+  display inline-block
+  width 19px
+  height 19px
+  background-position center center
+  background-repeat no-repeat
+  margin-left 17px
+.lobby-view.lobby-view__type-table
+  background-image url(../images/lobby-view-table.png)
+  &.lobby-view__state-active
+    background-image url(../images/lobby-view-table-active.png)
+.lobby-view.lobby-view__type-list
+  background-image url(../images/lobby-view-list.png)
+  &.lobby-view__state-active
+    background-image url(../images/lobby-view-list-active.png)
+.lobby-view.lobby-view__type-settings
+  background-image url(../images/lobby-view-settings.png)
+  &.lobby-view__state-active
+    background-image url(../images/lobby-view-settings-active.png)
 
 .lobby-list__display-table
   display table
