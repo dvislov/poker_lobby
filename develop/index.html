@@ -37,11 +37,73 @@
           <nav class="nav nav__type-filter-right">
             <ul class="nav-list">
               <li class="nav-item"><a href="#" class="nav-link">My tables<span class="nav-digit">2</span></a></li>
-              <li class="nav-item"><a href="#" class="nav-link nav-link__active">Filter</a></li>
+              <li class="nav-item"><a href="#" class="nav-link nav-link__active js-filter-button">Filter</a></li>
             </ul>
           </nav>
         </div>
         <div class="clearfix"></div>
+      </div>
+      <div class="filter-content js-filter-content">
+        <div class="filter-labels">
+          <div class="filter-label">maximum players</div>
+          <div class="filter-label">game type</div>
+          <div class="filter-label">stakes</div>
+          <div class="filter-label">buy in</div>
+          <div class="filter-label">sort by</div>
+          <div class="filter-label">advanced</div>
+        </div>
+        <div class="filter-controls">
+          <div class="filter-control-group">
+            <nav class="nav nav__type-players">
+              <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link nav-link__active">2</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">3</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">5</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">9</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="filter-control-group">
+            <div class="filter-select">Hold'em
+              <div class="header-user-caret header-user-caret__at-select"></div>
+            </div>
+          </div>
+          <div class="filter-control-group">
+            <div class="filter-range">
+              <div style="width: 50%; left: 25%;" class="filter-range-stripe"></div>
+              <div style="left: 25%;" class="filter-range-drag">
+                <div class="filter-range-drag-label">$ 0.4</div>
+              </div>
+              <div style="left: 75%;" class="filter-range-drag">
+                <div class="filter-range-drag-label">$ 0.6</div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-control-group">
+            <div class="filter-range">
+              <div style="width: 100%; left: 0%;" class="filter-range-stripe"></div>
+              <div style="left: 0;" class="filter-range-drag"></div>
+              <div style="left: 100%;" class="filter-range-drag"></div>
+              <div class="filter-range-drag-label-default">No limit</div>
+            </div>
+          </div>
+          <div class="filter-control-group">
+            <nav class="nav nav__type-stakes">
+              <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link nav-link__active">Stakes</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Avg.</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Pot</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="filter-control-group">
+            <nav class="nav nav__type-advanced">
+              <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">Clear all</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
       <div class="lobby-list lobby-list__display-table">
         <div class="lobby-list-header">
@@ -277,5 +339,7 @@
         </div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="/js/application.js"></script>
   </body>
 </html>

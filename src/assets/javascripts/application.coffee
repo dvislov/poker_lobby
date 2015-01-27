@@ -1,1 +1,4 @@
-console.log "It's a CoffeScript compile test!"
+$(document).ready ->
+  $('.js-filter-button').click ->
+    $(this).toggleClass('nav-link__active')
+    $('.js-filter-content').toggle()
