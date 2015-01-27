@@ -97,3 +97,94 @@
 .filter
   background-color #9b9b9b
   padding 8px 9px
+
+
+.lobby-list-header
+  background-color #bfc8ce
+
+.lobby-list-header-item
+  padding 18px
+  font-size 12px
+  font-weight bold
+  text-transform uppercase
+
+.lobby-list-header-item-help
+  display inline-block
+  background #899ba9
+  color #fff
+  font-weight normal
+  font-size 10px
+  width 12px
+  height 12px
+  border-radius: 50%
+  text-align center
+  vertical-align middle
+  line-height 12px
+  margin-left 7px
+  position relative
+  top -2px
+  padding-top 1px
+
+.lobby-item-content
+  font-size 14px
+
+.lobby-item-content__filled
+  color #b1bfc9
+.lobby-item-content__almost-fill
+  color #f00
+.lobby-item-yours
+  color #1d37f7
+
+.lobby-list-button
+  display inline-block
+  font-size 12px
+  text-decoration none
+  color #333
+  width 70px
+  text-align center
+  border: 1px solid #666
+  margin 0 5px
+  height 26px
+  border-radius 13px
+  line-height 26px
+.lobby-list-button__type-sucess
+  color #fff
+  background-color #20966c
+  border-color #20966c
+.lobby-list-button__type-disabled
+  color #767d83
+  border-color transparent
+.lobby-list-button__type-primary
+  background-color #0076a3
+  border-color #0076a3
+  color #fff
+
+.lobby-list__display-table
+  display table
+  width 100%
+  .lobby-list-header
+    display table-row
+  .lobby-list-header-item
+    display table-cell
+  .lobby-item
+    display table-row
+  .lobby-item-content
+    display table-cell
+    padding 12px 18px
+    border-top 1px solid #bac8d2
+  .lobby-item__type-active
+    .lobby-item-content
+      border-top 2px solid #0076a3
+      border-bottom 2px solid #0076a3
+      &:first-child
+        border-left 8px solid #0076a3
+        padding-left 10px
+      &:last-child
+        border-right 2px solid #0076a3
+        padding-right 16px
+      .lobby-list-button
+        &:first-child
+          visibility hidden
+    & + .lobby-item
+      .lobby-item-content
+        border: none
