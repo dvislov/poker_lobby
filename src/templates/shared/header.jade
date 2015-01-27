@@ -8,7 +8,7 @@
       nav.nav
         ul.nav-list
           li.nav-item
-            a.nav-link(href="#") Current Session
+            a.nav-link.nav-link__active(href="#") Current Session
           li.nav-item
             a.nav-link(href="#") Cashier
           li.nav-item
@@ -16,3 +16,23 @@
 
       .header-time 12:00 UTC+4
 
+.filter
+  .pull-left
+    nav.nav.nav__type-filter-left
+      ul.nav-list
+        li.nav-item
+          a.nav-link.nav-link__active(href="#") Cache games
+        li.nav-item
+          a.nav-link(href="#") Tourney
+        li.nav-item
+          a.nav-link(href="#") Sit'n'Go
+  .pull-right
+    nav.nav.nav__type-filter-right
+      ul.nav-list
+        li.nav-item
+          a.nav-link(href="#")
+            | My tables
+            span.nav-digit 2
+        li.nav-item
+          a.nav-link.nav-link__active(href="#") Filter
+  .clearfix

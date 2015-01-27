@@ -5,6 +5,13 @@
   float left !important
 .pull-right
   float right !important
+.clearfix
+  &:before,
+  &:after
+    content " "
+    display table
+  &:after
+    clear: both
 
 
 .header
@@ -25,6 +32,7 @@
   display inline-block
   vertical-align middle
   padding 7px 17px 0 22px
+
 
 .nav
   padding-top 5px
@@ -54,3 +62,38 @@
     background #209067
     border-color #209067
     color #000
+.nav-digit
+  color #fff
+  display inline-block
+  margin-left 5px
+
+.nav__type-filter-left
+  padding-top 0
+  margin-left -5px
+  .nav-link
+    background-color #555555
+    border-color #555555
+    color #bbb
+    &:hover,
+    &.nav-link__active
+      background-color #209067
+      border-color #209067
+      color #fff
+
+.nav__type-filter-right
+  padding-top 0
+  margin-right -5px
+  .nav-link
+    background-color #2e5b4f
+    border-color #2e5b4f
+    color #bbb
+    &:hover,
+    &.nav-link__active
+      background-color #222
+      border-color #222
+      color #fff
+
+
+.filter
+  background-color #9b9b9b
+  padding 8px 9px
