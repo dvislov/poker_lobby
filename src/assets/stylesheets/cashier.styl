@@ -1,0 +1,68 @@
+.user-panel
+  background #9b9b9b
+  padding 18px
+
+.user-panel-pic
+  width 50px
+  height 50px
+  background-color #332E29
+  background-image url(../images/user-panel-nopic.png)
+  background-position center center
+  border 2px solid #211110
+  box-shadow 0 0 0 2px rgba(0, 0, 0, 0.2)
+  border-radius 50%
+  margin-right 10px
+  display inline-block
+  vertical-align middle
+
+.user-panel-name
+  display inline-block
+  vertical-align middle
+  color: #222
+  font-size: 1rem
+  font-weight: 400
+
+
+.user-nav
+  border-bottom 46px solid #222
+  background-color #0d0d0d
+
+.user-nav-list
+  list-style-type none
+  margin 0
+  padding 0
+
+.user-nav-item
+  display inline-block
+  font-size 0
+  &:first-child
+    .user-nav-link
+      padding-left 18px
+
+.user-nav-link
+  color #999
+  font-size 0.75rem
+  font-weight 400
+  text-decoration none
+  text-transform uppercase
+  padding 14px 35px
+  display block
+  transition all 150ms ease
+
+.user-nav-link-active,
+.user-nav-link:hover
+  color #ddd
+  background-color #191919
+
+.user-nav-link-bullet
+  position relative
+  &:after
+    content ''
+    width 8px
+    height 8px
+    background-color #1EBE83
+    border-radius 50%
+    position absolute
+    right 22px
+    top 14px
+
