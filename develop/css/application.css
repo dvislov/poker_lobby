@@ -18,6 +18,20 @@ body {
 .clearfix:after {
   clear: both;
 }
+.btn {
+  cursor: pointer;
+}
+.btn-small {
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  padding: 0 16px;
+}
+.btn-bordered {
+  border: 1px solid #666;
+}
 .header {
   height: 40px;
   padding: 0 9px;
@@ -497,10 +511,10 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  font-size: 0;
 }
 .user-nav-item {
   display: inline-block;
-  font-size: 0;
 }
 .user-nav-item:first-child .user-nav-link {
   padding-left: 18px;
@@ -532,4 +546,69 @@ body {
   position: absolute;
   right: 22px;
   top: 14px;
+}
+.cashier-panels {
+  padding: 55px 40px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.cashier-panel {
+  background-color: #edf1f4;
+  border: 1px solid #a4b2bb;
+  border-radius: 4px;
+  float: left;
+}
+.cashier-panel:first-child {
+  width: 51%;
+}
+.cashier-panel:last-child {
+  width: 48%;
+}
+.cashier-panel__type-info {
+  padding: 40px 60px 14px;
+}
+.cashier-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin: 0 0 24px;
+}
+.cashier-last-time {
+  display: block;
+  font-size: 1.3125rem;
+  margin: 0 0 70px;
+  font-weight: 700;
+}
+.cashout-table {
+  width: 100%;
+}
+.cashout-table-caption {
+  color: #222;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+  padding-bottom: 26px;
+}
+.cashout-table-td {
+  padding-bottom: 26px;
+  color: #333;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.cashout-status {
+  font-size: 0.75rem;
+}
+.cashout-pending {
+  color: #767d83;
+}
+.cashout-complete {
+  color: #1ebe83;
+}
+.cashout-table-check-icon {
+  margin-left: 22px;
 }

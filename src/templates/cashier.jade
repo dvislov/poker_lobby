@@ -7,5 +7,34 @@ html
       include shared/header
       include shared/user_panel
 
+      .cashier-panels
+        .cashier-panel
+        .cashier-panel.cashier-panel__type-info
+          p.cashier-text
+            | Счет Play Money можно пополнять только при количестве фишек меньше 100 000
+            br
+            | Счет Play Money можно пополнять не чаще, чем раз в 4 часа.
+          p.cashier-text
+            | С предыдущего пополнения прошло:
+            span.cashier-last-time 1ч 35 минут
+
+          table.cashout-table
+            caption.cashout-table-caption pending cashouts
+            tr.cashout-table-tr
+              td.cashout-table-td 02.02.2015
+              td.cashout-table-td $ 100
+              td.cashout-table-td
+                span.cashout-status.cashout-pending Pending
+              td.cashout-table-td
+                a.btn.btn-small.btn-bordered Stop
+            tr.cashout-table-tr
+              td.cashout-table-td 01.02.2015
+              td.cashout-table-td $ 10
+              td.cashout-table-td
+                span.cashout-status.cashout-complete Complete
+              td.cashout-table-td
+                img.cashout-table-check-icon(src="images/next-icon.png", width="15", height="10", alt="next-icon.png")
+
+
     script(src="https://code.jquery.com/jquery-2.1.3.min.js")
     script(src="/js/application.js")
