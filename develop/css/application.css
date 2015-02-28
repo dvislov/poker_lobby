@@ -20,6 +20,25 @@ body {
 }
 .btn {
   cursor: pointer;
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 400;
+  min-width: 126px;
+  text-align: center;
+  padding: 9px 0;
+  border-radius: 15px;
+}
+.btn-orange {
+  background-color: #e88f38;
+  color: #fff;
+}
+.btn-green {
+  background-color: #489f7f;
+  color: #fff;
+}
+.btn-blue {
+  background-color: #5d8aa1;
+  color: #fff;
 }
 .btn-small {
   display: inline-block;
@@ -28,6 +47,7 @@ body {
   border-radius: 12px;
   font-size: 0.75rem;
   padding: 0 16px;
+  min-width: 0;
 }
 .btn-bordered {
   border: 1px solid #666;
@@ -564,6 +584,7 @@ body {
 }
 .cashier-panel:first-child {
   width: 51%;
+  box-sizing: content-box;
 }
 .cashier-panel:last-child {
   width: 48%;
@@ -582,6 +603,53 @@ body {
   font-size: 1.3125rem;
   margin: 0 0 70px;
   font-weight: 700;
+}
+.cashier-table {
+  width: 100%;
+}
+.cashier-table-caption {
+  color: #333;
+  font-size: 1.375rem;
+  font-weight: 400;
+  text-align: left;
+  padding: 24px 30px 16px;
+}
+.cashier-table-th {
+  background-color: #d7dee2;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #222;
+  padding: 14px 30px 10px;
+}
+.cashier-table-tr {
+  border-bottom: 1px solid #bac8d2;
+}
+.cashier-table-tr__grand-total-tr {
+  border-bottom: none;
+}
+.cashier-table-tr__play-money-add {
+  border-bottom: none;
+  background-color: #d7dee2;
+}
+.cashier-table-tr__footer {
+  border-bottom: none;
+  background-color: #444;
+}
+.cashier-table-td {
+  color: #333;
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 11px 30px;
+}
+.cashier-table-td__align-right {
+  text-align: right;
+}
+.cashier-table-td__grand-total-td {
+  color: #333;
+  font-size: 1.375rem;
+  font-weight: 400;
+  padding: 28px 30px;
 }
 .cashout-table {
   width: 100%;

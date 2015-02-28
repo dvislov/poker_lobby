@@ -39,7 +39,52 @@
         </ul>
       </nav>
       <div class="cashier-panels">
-        <div class="cashier-panel"></div>
+        <div class="cashier-panel">
+          <table class="cashier-table">
+            <caption class="cashier-table-caption">Cashier</caption>
+            <tr class="cashier-table-tr">
+              <td class="cashier-table-th">currency</td>
+              <td class="cashier-table-th">amount</td>
+              <td class="cashier-table-th">in play</td>
+              <td class="cashier-table-th">total</td>
+            </tr>
+            <tr class="cashier-table-tr">
+              <td class="cashier-table-td">US Dollars (USD)</td>
+              <td class="cashier-table-td">$ 100</td>
+              <td class="cashier-table-td">$ 5</td>
+              <td class="cashier-table-td">$ 105</td>
+            </tr>
+            <tr class="cashier-table-tr">
+              <td class="cashier-table-td">Euro (EUR)</td>
+              <td class="cashier-table-td">€ 25</td>
+              <td class="cashier-table-td">€ 2</td>
+              <td class="cashier-table-td">€ 27</td>
+            </tr>
+            <tr class="cashier-table-tr">
+              <td class="cashier-table-td">British pounds</td>
+              <td class="cashier-table-td">£ 200</td>
+              <td class="cashier-table-td">£ 3</td>
+              <td class="cashier-table-td">£ 203</td>
+            </tr>
+            <tr class="cashier-table-tr cashier-table-tr__play-money">
+              <td class="cashier-table-td">Play-money</td>
+              <td class="cashier-table-td">Þ 55</td>
+              <td class="cashier-table-td">Þ 5</td>
+              <td class="cashier-table-td">Þ 60</td>
+            </tr>
+            <tr class="cashier-table-tr cashier-table-tr__grand-total-tr">
+              <td colspan="4" class="cashier-table-td cashier-table-td__grand-total-td">Grand Total: 4500</td>
+            </tr>
+            <tr class="cashier-table-tr cashier-table-tr__play-money-add">
+              <td colspan="2" class="cashier-table-td">Playmoney: 2000</td>
+              <td colspan="2" class="cashier-table-td cashier-table-td__align-right"><a class="btn btn-orange">Add chips</a></td>
+            </tr>
+            <tr class="cashier-table-tr cashier-table-tr__footer">
+              <td colspan="2" class="cashier-table-td"><a class="btn btn-green">Make deposit</a></td>
+              <td colspan="2" class="cashier-table-td cashier-table-td__align-right"><a class="btn btn-blue">Cashout</a></td>
+            </tr>
+          </table>
+        </div>
         <div class="cashier-panel cashier-panel__type-info">
           <p class="cashier-text">Счет Play Money можно пополнять только при количестве фишек меньше 100 000<br>Счет Play Money можно пополнять не чаще, чем раз в 4 часа.</p>
           <p class="cashier-text">С предыдущего пополнения прошло:<span class="cashier-last-time">1ч 35 минут</span></p>

@@ -88,29 +88,29 @@ gulp.task 'coffee', ->
 
 
 # Copy static assets
-gulp.task 'fonts-assets', ->
-  gulp.src config.paths.fonts.src
-    .pipe plugins.syncFiles
-      name: 'fonts'
-      src: config.paths.fonts.src
-      dest: config.paths.fonts.dest
+# gulp.task 'fonts-assets', ->
+#   gulp.src config.paths.fonts.src
+#     .pipe plugins.syncFiles
+#       name: 'fonts'
+#       src: config.paths.fonts.src
+#       dest: config.paths.fonts.dest
 
-    .pipe plugins.plumber()
-    .pipe plugins.duration('Fonts assets sync')
+#     .pipe plugins.plumber()
+#     .pipe plugins.duration('Fonts assets sync')
 
-    .pipe gulp.dest config.paths.fonts.dest
+#     .pipe gulp.dest config.paths.fonts.dest
 
-gulp.task 'images-assets', ->
-  gulp.src config.paths.images.src
-    .pipe plugins.syncFiles
-      name: 'images'
-      src: config.paths.images.src
-      dest: config.paths.images.dest
+# gulp.task 'images-assets', ->
+#   gulp.src config.paths.images.src
+#     .pipe plugins.syncFiles
+#       name: 'images'
+#       src: config.paths.images.src
+#       dest: config.paths.images.dest
 
-    .pipe plugins.plumber()
-    .pipe plugins.duration('Images assets sync')
+#     .pipe plugins.plumber()
+#     .pipe plugins.duration('Images assets sync')
 
-    .pipe gulp.dest config.paths.images.dest
+#     .pipe gulp.dest config.paths.images.dest
 
 # Watchers
 
@@ -124,8 +124,8 @@ gulp.task 'watch', ->
 
   gulp.watch config.paths.coffee.watch, ['coffee']
 
-  gulp.watch config.paths.fonts.src, ['fonts-assets']
-  gulp.watch config.paths.images.src, ['images-assets']
+  # gulp.watch config.paths.fonts.src, ['fonts-assets']
+  # gulp.watch config.paths.images.src, ['images-assets']
   return
 
 

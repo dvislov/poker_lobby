@@ -9,6 +9,46 @@ html
 
       .cashier-panels
         .cashier-panel
+          table.cashier-table
+            caption.cashier-table-caption Cashier
+            tr.cashier-table-tr
+              td.cashier-table-th currency
+              td.cashier-table-th amount
+              td.cashier-table-th in play
+              td.cashier-table-th total
+            tr.cashier-table-tr
+              td.cashier-table-td US Dollars (USD)
+              td.cashier-table-td $ 100
+              td.cashier-table-td $ 5
+              td.cashier-table-td $ 105
+            tr.cashier-table-tr
+              td.cashier-table-td Euro (EUR)
+              td.cashier-table-td € 25
+              td.cashier-table-td € 2
+              td.cashier-table-td € 27
+            tr.cashier-table-tr
+              td.cashier-table-td British pounds
+              td.cashier-table-td £ 200
+              td.cashier-table-td £ 3
+              td.cashier-table-td £ 203
+            tr.cashier-table-tr.cashier-table-tr__play-money
+              td.cashier-table-td Play-money
+              td.cashier-table-td Þ 55
+              td.cashier-table-td Þ 5
+              td.cashier-table-td Þ 60
+            tr.cashier-table-tr.cashier-table-tr__grand-total-tr
+              td.cashier-table-td.cashier-table-td__grand-total-td(colspan="4") Grand Total: 4500
+            tr.cashier-table-tr.cashier-table-tr__play-money-add
+              td.cashier-table-td(colspan="2") Playmoney: 2000
+              td.cashier-table-td.cashier-table-td__align-right(colspan="2")
+                a.btn.btn-orange Add chips
+            tr.cashier-table-tr.cashier-table-tr__footer
+              td.cashier-table-td(colspan="2")
+                a.btn.btn-green Make deposit
+              td.cashier-table-td.cashier-table-td__align-right(colspan="2")
+                a.btn.btn-blue Cashout
+
+
         .cashier-panel.cashier-panel__type-info
           p.cashier-text
             | Счет Play Money можно пополнять только при количестве фишек меньше 100 000
