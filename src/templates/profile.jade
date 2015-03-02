@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    include shared/head
+  body
+    .main
+      include shared/header
+      include shared/user_panel
+
+      .cashier-panels
+        .cashier-panel.cashier-panel__type-user-form
+
+
+        .cashier-panel.cashier-panel__type-user-info
+          h2.user-info-header Avatar
+          .user-info-avatar
+
+          a.btn.btn-blue Upload
+          br
+          a.btn.btn-dark-grey Delete
+
+          br
+
+          nav.user-info-social
+            span.user-info-social-header Connect your social accounts
+            ul.user-info-social-list
+              li.user-info-social-item
+                a.user-info-social-link.user-info-social-link__type-twi
+              li.user-info-social-item
+                a.user-info-social-link.user-info-social-link__type-vk
+              li.user-info-social-item
+                a.user-info-social-link.user-info-social-link__type-ok
+              li.user-info-social-item
+                a.user-info-social-link.user-info-social-link__type-fb
+
+
+    script(src="https://code.jquery.com/jquery-2.1.3.min.js")
+    script(src="/js/application.js")
