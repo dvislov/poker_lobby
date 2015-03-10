@@ -39,7 +39,69 @@
         </ul>
       </nav>
       <div class="cashier-panels">
-        <div class="cashier-panel cashier-panel__type-user-form"></div>
+        <div class="cashier-panel cashier-panel__type-user-form">
+          <h2 class="user-form-header">Personal information</h2>
+          <form>
+            <div class="user-form-row">
+              <div class="user-form-control-group">
+                <label class="user-form-label">username</label>
+                <input type="text" class="user-form-input">
+              </div>
+              <div class="user-form-control-group">
+                <label class="user-form-label">first name</label>
+                <input type="text" class="user-form-input">
+              </div>
+              <div class="user-form-control-group">
+                <label class="user-form-label">last name</label>
+                <input type="text" class="user-form-input">
+              </div>
+            </div>
+            <div class="user-form-row">
+              <div class="user-form-control-group">
+                <label class="user-form-label">date of birth</label>
+                <input type="text" class="user-form-input">
+              </div>
+              <div class="user-form-control-group">
+                <label class="user-form-label">e-mail</label>
+                <input type="text" class="user-form-input">
+              </div>
+              <div class="user-form-control-group">
+                <label class="user-form-label">phone</label>
+                <input type="text" class="user-form-input">
+              </div>
+            </div>
+            <div class="user-form-row user-form-row__type-geo">
+              <div class="user-form-control-group">
+                <label class="user-form-label">country</label>
+                <input type="text" class="user-form-input">
+              </div>
+              <div class="user-form-control-group">
+                <label class="user-form-label">city</label>
+                <input type="text" class="user-form-input">
+              </div>
+              <div class="user-form-control-group">
+                <label class="user-form-label">zip/post code</label>
+                <input type="text" class="user-form-input">
+              </div>
+            </div>
+            <div class="user-form-row user-form-row__type-bottom">
+              <div class="user-form-adress-lines">
+                <div class="user-form-control-group">
+                  <label class="user-form-label">adress line 1</label>
+                  <input type="text" class="user-form-input user-form-input__type-address">
+                </div>
+                <div class="user-form-control-group">
+                  <label class="user-form-label">adress line 2</label>
+                  <input type="text" class="user-form-input user-form-input__type-address">
+                </div>
+              </div>
+              <div class="user-form-buttons">
+                <p class="user-form-notice">Your account is not veryfied</p><a href="javascript:void(0)" class="btn btn-red btn-block">Verify your account</a>
+                <div class="user-form-buttons-row"><a href="javascript:void(0)" class="btn btn-grey">Cancel</a><a href="javascript:void(0)" class="btn btn-green">Save settings</a></div>
+              </div>
+            </div>
+          </form>
+        </div>
         <div class="cashier-panel cashier-panel__type-user-info">
           <h2 class="user-info-header">Avatar</h2>
           <div class="user-info-avatar"></div><a class="btn btn-blue">Upload</a><br><a class="btn btn-dark-grey">Delete</a><br>

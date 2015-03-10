@@ -9,6 +9,59 @@ html
 
       .cashier-panels
         .cashier-panel.cashier-panel__type-user-form
+          h2.user-form-header Personal information
+          form
+            .user-form-row
+              .user-form-control-group
+                label.user-form-label username
+                input.user-form-input(type="text")
+              .user-form-control-group
+                label.user-form-label first name
+                input.user-form-input(type="text")
+              .user-form-control-group
+                label.user-form-label last name
+                input.user-form-input(type="text")
+
+            .user-form-row
+              .user-form-control-group
+                label.user-form-label date of birth
+                input.user-form-input(type="text")
+              .user-form-control-group
+                label.user-form-label e-mail
+                input.user-form-input(type="text")
+              .user-form-control-group
+                label.user-form-label phone
+                input.user-form-input(type="text")
+
+            .user-form-row.user-form-row__type-geo
+              .user-form-control-group
+                label.user-form-label country
+                input.user-form-input(type="text")
+              .user-form-control-group
+                label.user-form-label city
+                input.user-form-input(type="text")
+              .user-form-control-group
+                label.user-form-label zip/post code
+                input.user-form-input(type="text")
+
+            .user-form-row.user-form-row__type-bottom
+              .user-form-adress-lines
+                .user-form-control-group
+                  label.user-form-label adress line 1
+                  input.user-form-input.user-form-input__type-address(type="text")
+                .user-form-control-group
+                  label.user-form-label adress line 2
+                  input.user-form-input.user-form-input__type-address(type="text")
+
+              .user-form-buttons
+
+                p.user-form-notice Your account is not veryfied
+
+                a.btn.btn-red.btn-block(href="javascript:void(0)") Verify your account
+
+                .user-form-buttons-row
+                  a.btn.btn-grey(href="javascript:void(0)") Cancel
+                  a.btn.btn-green(href="javascript:void(0)") Save settings
 
 
         .cashier-panel.cashier-panel__type-user-info
