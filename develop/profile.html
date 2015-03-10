@@ -73,7 +73,13 @@
             <div class="user-form-row user-form-row__type-geo">
               <div class="user-form-control-group">
                 <label class="user-form-label">country</label>
-                <input type="text" class="user-form-input">
+                <div class="fake-user-input">
+                  <select class="user-form-select js-custom-select">
+                    <option>Russia</option>
+                    <option>France</option>
+                    <option>Ukraine</option>
+                  </select>
+                </div>
               </div>
               <div class="user-form-control-group">
                 <label class="user-form-label">city</label>
@@ -115,8 +121,9 @@
           </nav>
         </div>
       </div>
+      <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+      <script src="js/jquery.customSelect.min.js"></script>
+      <script src="/js/application.js"></script>
     </div>
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="/js/application.js"></script>
   </body>
 </html>

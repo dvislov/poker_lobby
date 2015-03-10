@@ -36,7 +36,11 @@ html
             .user-form-row.user-form-row__type-geo
               .user-form-control-group
                 label.user-form-label country
-                input.user-form-input(type="text")
+                .fake-user-input
+                  select.user-form-select.js-custom-select
+                    option Russia
+                    option France
+                    option Ukraine
               .user-form-control-group
                 label.user-form-label city
                 input.user-form-input(type="text")
@@ -86,6 +90,4 @@ html
               li.user-info-social-item
                 a.user-info-social-link.user-info-social-link__type-fb
 
-
-    script(src="https://code.jquery.com/jquery-2.1.3.min.js")
-    script(src="/js/application.js")
+      include shared/scripts
