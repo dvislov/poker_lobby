@@ -25,7 +25,19 @@ html
             .user-form-row
               .user-form-control-group
                 label.user-form-label date of birth
-                input.user-form-input(type="text")
+                .fake-user-input
+                  select.user-form-select.user-form-select__day.js-custom-select
+                    option 01
+                    option 02
+                    option 03
+                  select.user-form-select.user-form-select__month.js-custom-select
+                    option Sep
+                    option Oct
+                    option Nov
+                  select.user-form-select.user-form-select__year.js-custom-select
+                    option 1985
+                    option 1986
+                    option 1987
               .user-form-control-group
                 label.user-form-label e-mail
                 input.user-form-input(type="text")
